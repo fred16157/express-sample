@@ -11,3 +11,7 @@ express.set('view engine', 'ejs');
 express.get('/', (req, res) => {
     res.render('index');
 });
+
+express.listen(3000, () => {
+    console.log('Listening on http://localhost:3000');
+});
